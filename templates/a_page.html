@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A_page</title>
+</head>
+<body>
+	<h2>You have entered {{ length }} words</h2>
+	<hr>
+	<div><b>Your Text :</b> </div>
+	{{ fulltext }}
+	<hr>
+	<div><b> Total count : </b></div>
+	{% for word,count in word_coll %}
+	{{ word }} - {{ count }}
+	<br>
+	{% endfor %}
+</body>
+</html>
